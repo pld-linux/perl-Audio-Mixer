@@ -10,7 +10,8 @@ Summary(pl):	Audio::Mixer - rozszerzenie Perla do sterowania mikserem d¼wiêku
 Name:		perl-Audio-Mixer
 Version:	0.7
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5aaa808a4852ed68f952705172ece2a8
