@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" (opens /dev/mixer)
+%bcond_with	tests	# perform "make test" (opens /dev/mixer)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
@@ -38,7 +38,7 @@ funkcj± get_mixer_params().
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
