@@ -8,12 +8,12 @@ Summary:	Audio::Mixer Perl module
 Summary(pl):	Modu³ Perla Audio::Mixer
 Name:		perl-Audio-Mixer
 Version:	0.6
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,8 @@ funkcj± get_mixer_params().
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{?_with_tests:%{__make} test}
@@ -49,10 +50,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%attr(755,root,root) %{perl_sitearch}/Audio/volume.pl
-%{perl_sitearch}/Audio/Mixer.pm
-%dir %{perl_sitearch}/auto/Audio/Mixer
-%{perl_sitearch}/auto/Audio/Mixer/autosplit.ix
-%{perl_sitearch}/auto/Audio/Mixer/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Audio/Mixer/*.so
+%attr(755,root,root) %{perl_vendorarch}/Audio/volume.pl
+%{perl_vendorarch}/Audio/Mixer.pm
+%dir %{perl_vendorarch}/auto/Audio/Mixer
+%{perl_vendorarch}/auto/Audio/Mixer/autosplit.ix
+%{perl_vendorarch}/auto/Audio/Mixer/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Audio/Mixer/*.so
 %{_mandir}/man3/*
