@@ -1,18 +1,19 @@
 #
 # Conditional build:
 # _with_tests - perform "make test" (opens /dev/mixer)
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	Mixer
-Summary:	Audio::Mixer Perl module
-Summary(pl):	Modu³ Perla Audio::Mixer
+Summary:	Audio::Mixer - Perl extension for Sound Mixer control
+Summary(pl):	Audio::Mixer - rozszerzenie Perla do sterowania mikserem d¼wiêku
 Name:		perl-Audio-Mixer
-Version:	0.6
+Version:	0.7
 Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	67cedd1f9abccc6b31c5c1503e97d30e
+# Source0-md5:	5aaa808a4852ed68f952705172ece2a8
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
