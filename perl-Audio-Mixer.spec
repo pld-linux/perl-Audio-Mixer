@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	Mixer
-Summary:	Audio::Mixer - Perl extension for Sound Mixer control
+Summary:	Audio::Mixer - Perl extension for sound mixer control
 Summary(pl):	Audio::Mixer - rozszerzenie Perla do sterowania mikserem d¼wiêku
 Name:		perl-Audio-Mixer
 Version:	0.7
