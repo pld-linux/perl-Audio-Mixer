@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (opens /dev/mixer)
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Audio
-%define		pnam	Mixer
+%define	pdir	Audio
+%define	pnam	Mixer
 Summary:	Audio::Mixer - Perl extension for sound mixer control
 Summary(pl):	Audio::Mixer - rozszerzenie Perla do sterowania mikserem d¼wiêku
 Name:		perl-Audio-Mixer
