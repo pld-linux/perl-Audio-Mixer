@@ -7,7 +7,7 @@
 Summary:	Audio::Mixer Perl module
 Summary(pl):	Modu³ Perla Audio::Mixer
 Name:		perl-Audio-Mixer
-Version:	0.4
+Version:	0.6
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
