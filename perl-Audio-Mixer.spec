@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Mixer
 Summary:	Audio::Mixer - Perl extension for sound mixer control
-Summary(pl):	Audio::Mixer - rozszerzenie Perla do sterowania mikserem d¼wiêku
+Summary(pl.UTF-8):   Audio::Mixer - rozszerzenie Perla do sterowania mikserem dÅºwiÄ™ku
 Name:		perl-Audio-Mixer
 Version:	0.7
 Release:	2
@@ -25,11 +25,11 @@ sound mixer parameters. The most important probably 'vol' (volume).
 The list of all mixer parameters can be obtained using
 get_mixer_params() function.
 
-%description -l pl
-To jest bardzo prosty perlowy interfejs, pozwalaj±cy na ustawianie
-ró¿nych parametrów miksera d¼wiêku. Prawdopodobnie najwa¿niejszym jest
-'vol' (g³o¶no¶æ). Listê wszystkich parametrów miksera mo¿na odczytaæ
-funkcj± get_mixer_params().
+%description -l pl.UTF-8
+To jest bardzo prosty perlowy interfejs, pozwalajÄ…cy na ustawianie
+rÃ³Å¼nych parametrÃ³w miksera dÅºwiÄ™ku. Prawdopodobnie najwaÅ¼niejszym jest
+'vol' (gÅ‚oÅ›noÅ›Ä‡). ListÄ™ wszystkich parametrÃ³w miksera moÅ¼na odczytaÄ‡
+funkcjÄ… get_mixer_params().
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
