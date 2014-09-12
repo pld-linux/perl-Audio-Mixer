@@ -59,6 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Audio/Mixer.pm
 %dir %{perl_vendorarch}/auto/Audio/Mixer
 %{perl_vendorarch}/auto/Audio/Mixer/autosplit.ix
-%{perl_vendorarch}/auto/Audio/Mixer/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/Mixer/*.so
 %{_mandir}/man3/*
