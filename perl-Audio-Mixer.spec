@@ -9,7 +9,7 @@ Summary:	Audio::Mixer - Perl extension for sound mixer control
 Summary(pl.UTF-8):	Audio::Mixer - rozszerzenie Perla do sterowania mikserem dźwięku
 Name:		perl-Audio-Mixer
 Version:	0.7
-Release:	13
+Release:	14
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
