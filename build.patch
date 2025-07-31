@@ -1,0 +1,11 @@
+--- Audio-Mixer-0.7/Mix.c.orig	2003-03-27 06:43:11.000000000 +0100
++++ Audio-Mixer-0.7/Mix.c	2025-07-31 02:13:54.624747809 +0200
+@@ -78,7 +78,7 @@
+ #ifdef DEBUG
+   fprintf(stderr, "close_mixer()\n");
+ #endif
+-  if (mixer_fd < 0) return;
++  if (mixer_fd < 0) return(-1);
+   close(mixer_fd);
+   init_flag = 0;
+   mixer_fd = -1;
